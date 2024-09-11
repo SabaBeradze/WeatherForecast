@@ -1,0 +1,211 @@
+System.AggregateException: One or more errors occurred. (City with this name is not found!)
+ ---> WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 17
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 13
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at WeatherForecast.Service.XxWeatherService.GetData(String city, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 44
+   at WeatherForecast.Service.WeatherAggregatorService.<>c__DisplayClass2_0.<GetAverage>b__0(IWeatherAggregatorService serv) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToList()
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 21System.AggregateException: One or more errors occurred. (City with this name is not found!)
+ ---> WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 17
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 13
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at WeatherForecast.Service.XxWeatherService.GetData(String city, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 44
+   at WeatherForecast.Service.WeatherAggregatorService.<>c__DisplayClass2_0.<GetAverage>b__0(IWeatherAggregatorService serv) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToList()
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 21System.AggregateException: One or more errors occurred. (City with this name is not found!)
+ ---> WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 17
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 13
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at WeatherForecast.Service.XxWeatherService.GetData(String city, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 44
+   at WeatherForecast.Service.WeatherAggregatorService.<>c__DisplayClass2_0.<GetAverage>b__0(IWeatherAggregatorService serv) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToList()
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 21System.AggregateException: One or more errors occurred. (City with this name is not found!)
+ ---> WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 17
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 13
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at WeatherForecast.Service.XxWeatherService.GetData(String city, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 44
+   at WeatherForecast.Service.WeatherAggregatorService.<>c__DisplayClass2_0.<GetAverage>b__0(IWeatherAggregatorService serv) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToList()
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 21System.AggregateException: One or more errors occurred. (City with this name is not found!)
+ ---> WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 26
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 13
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at WeatherForecast.Service.XxWeatherService.GetData(String city, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 44
+   at WeatherForecast.Service.WeatherAggregatorService.<>c__DisplayClass2_0.<GetAverage>b__0(IWeatherAggregatorService serv) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToList()
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 21System.AggregateException: One or more errors occurred. (City with this name is not found!)
+ ---> WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 26
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 13
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at WeatherForecast.Service.XxWeatherService.GetData(String city, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 44
+   at WeatherForecast.Service.WeatherAggregatorService.<>c__DisplayClass2_0.<GetAverage>b__0(IWeatherAggregatorService serv) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at System.Linq.Enumerable.SelectArrayIterator`2.ToList()
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 21System.AggregateException: One or more errors occurred. (City with this name is not found!)
+ ---> WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 26
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 13
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at WeatherForecast.Service.XxWeatherService.GetData(String city) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 44
+   at WeatherForecast.Service.WeatherAggregatorService.<>c__DisplayClass2_0.<GetAverage>b__0(IWeatherAggregatorService serv) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 14
+   at System.Linq.Enumerable.SelectArrayIterator`2.MoveNext()
+   at System.Threading.Tasks.Task.WhenAll[TResult](IEnumerable`1 tasks)
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 15
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 21WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 43
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 29
+   at WeatherForecast.Service.XxWeatherService.GetWeather(String city) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 66
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 15
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 20WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountry(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 43
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityName(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 29
+   at WeatherForecast.Service.XxWeatherService.GetWeather(String city) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 66
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverage(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 15
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherData(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 20WeatherForecast.Exceptions.CountryNotFoundException: City with this name is not found!
+   at WeatherForecast.Service.CountryService.GetCountryAsync(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/CountryService.cs:line 43
+   at WeatherForecast.Service.XxWeatherService.GetWeatherByCityNameAsync(String cityName) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 29
+   at WeatherForecast.Service.XxWeatherService.GetWeatherAsync(String city) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/XXWeatherService.cs:line 66
+   at WeatherForecast.Service.WeatherAggregatorService.GetAverageAsync(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Service/WeatherAggregatorService.cs:line 15
+   at WeatherForecast.Controllers.WeatherForecastController.GetWeatherDataAsync(String cityName, Type type) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Controllers/WeatherForecastController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at WeatherForecast.Middlewares.GlobalExceptionHandlingMiddlewares.InvokeAsync(HttpContext context) in /Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/Middlewares/GlobalExceptionHandlingMiddlewares.cs:line 20

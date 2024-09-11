@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "YmQ70+iCOVcXC14KNKzhRacFFDCjFFptZ4PsuX372jZWu4NeuUTVJCa0W3y5gaGceinaniM8q8howyFuo6YWKA==",
+  "success": true,
+  "projectFilePath": "/Users/sababeradze/RiderProjects/WeatherForecast/WeatherForecast/WeatherForecast.csproj",
+  "expectedPackageFiles": [
+    "/Users/sababeradze/.nuget/packages/mapster/7.4.1-pre01/mapster.7.4.1-pre01.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/mapster.core/1.2.2-pre01/mapster.core.1.2.2-pre01.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/microsoft.aspnetcore.openapi/7.0.5/microsoft.aspnetcore.openapi.7.0.5.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/serilog/4.0.2-dev-02220/serilog.4.0.2-dev-02220.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/sababeradze/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}
